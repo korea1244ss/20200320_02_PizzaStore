@@ -22,6 +22,7 @@ import kr.uk.dh.a20200320_02_pizzastore.datas.PizzaStore;
 public class PizzaStoreDetailActivity extends BaseActivity {
     PizzaStore store = null;
     ActivityPizzaStoreDetailBinding binding = null;
+    String url = null;
 
 
     @Override
@@ -38,6 +39,9 @@ public class PizzaStoreDetailActivity extends BaseActivity {
         binding.storeLogoImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(mContext, LogoViewActivity.class);
+                intent.putExtra("logoUrl",store.getLogoUrl());
+                startActivity(intent);
 
             }
         });

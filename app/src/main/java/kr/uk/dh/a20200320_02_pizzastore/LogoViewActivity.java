@@ -5,11 +5,15 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
+import com.bumptech.glide.Glide;
+
 import kr.uk.dh.a20200320_02_pizzastore.databinding.ActivityLogoViewBinding;
 
 public class LogoViewActivity extends BaseActivity {
 
     ActivityLogoViewBinding binding = null;
+
+    String url = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +33,11 @@ public class LogoViewActivity extends BaseActivity {
     @Override
     public void setValues() {
 
+
+
+
+        url = getIntent().getStringExtra("logoUrl");
+
+        Glide.with(mContext).load(url).into(binding.bigLogoImg);
     }
 }
