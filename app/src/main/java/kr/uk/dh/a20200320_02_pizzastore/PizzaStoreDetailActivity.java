@@ -35,6 +35,13 @@ public class PizzaStoreDetailActivity extends BaseActivity {
     @Override
     public void setupEvets() {
 
+        binding.storeLogoImg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
         binding.callBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
