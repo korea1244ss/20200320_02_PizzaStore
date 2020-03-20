@@ -6,6 +6,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
         android:layout_height="match_parent"
         tools:context=".PizzaStoreDetailActivity">
 
@@ -28,6 +30,7 @@
             >
 
             <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/storeLogoImg"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 />
@@ -40,12 +43,14 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:text="가게이름"/>
+
         <TextView
+            android:id="@+id/storeNameTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="피자헛"
             android:layout_marginTop="20dp"
-            android:textSize="30sp"/>
+            android:text="피자헛"
+            android:textSize="30sp" />
 
 
         <LinearLayout
@@ -66,6 +71,7 @@
                     android:textSize="20sp"
                     android:text="전화번호"/>
                 <TextView
+                    android:id="@+id/storePhoneTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="전화번호 자리"
@@ -80,6 +86,7 @@
                 android:layout_weight="1"/>
 
             <Button
+                android:id="@+id/callBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
