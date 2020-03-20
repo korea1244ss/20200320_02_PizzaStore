@@ -3,6 +3,7 @@
     package="kr.uk.dh.a20200320_02_pizzastore">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
