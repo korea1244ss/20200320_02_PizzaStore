@@ -30,7 +30,7 @@ public class PizzaStoreDetailActivity extends BaseActivity {
 
     @Override
     public void setValues() {
-        PizzaStore store = getIntent(PizzaStore).getSerializableExtra("store");
+        PizzaStore store = (PizzaStore)getIntent().getSerializableExtra("store");
 
         binding.storeNameTxt.setText(store.getStoreName());
         binding.storePhoneTxt.setText(store.getPhoneNum());
